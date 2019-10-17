@@ -1,13 +1,32 @@
 <html>
 <head>
-    <tetle>Exercise 4</tetle>
+    <title>Exercise 4</title>
 </head>
 
 <body>
 
 <script>
 
+function anosEstudos(anos)
+{
 
+    var experiencia
+
+    if (anos <= 1) { experiencia = 'Iniciante' };
+
+    if (anos > 1 && anos <= 3) { experiencia = 'Intermediario'};
+
+    if (anos > 3 && anos <= 6) { experiencia = 'Avançado' };
+
+    if (anos >= 7) { experiencia = 'Jadi Master' };
+
+    console.log(experiencia);
+
+}
+
+var anos = 7;
+
+anosEstudos(anos);
 
 </script>
 </body>
