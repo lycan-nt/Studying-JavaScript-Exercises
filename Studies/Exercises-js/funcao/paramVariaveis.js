@@ -10,4 +10,4 @@ function soma() {
 console.log(soma(5,5,5))
 console.log(soma(1))
 console.log(soma())
-console.log(soma( 5 ,5, 'Teste'))
+console.log(soma( 5 ,5 , 'Teste'))
