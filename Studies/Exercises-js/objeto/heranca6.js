@@ -18,3 +18,4 @@ function novo(f, ...params) {
 const aula3 = novo(aula, 'Bem vindo', 123)
 const aula4 = novo(aula, 'Ate mais',456)
 console.log(aula3, aula4)
+
