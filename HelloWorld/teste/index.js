@@ -15,6 +15,10 @@ app.get('/contato', function(req, res){
 })
 
 
+app.get('/ola/:cargo/:nome', function(req, res) {
+    res.send("<h1>Bem vindo, " + req.params.nome + "!</h1>" + "<h2> Seu cargo e: " + req.params.cargo + ". <h2>")
+    
+})
 
 
 
