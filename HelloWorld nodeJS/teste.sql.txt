@@ -1,0 +1,7 @@
+insert into usuarios (nome, email, idade) values (
+
+	"Flop",
+	"Não tem",
+	1
+
+);
