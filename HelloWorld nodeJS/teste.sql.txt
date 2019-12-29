@@ -5,3 +5,7 @@ insert into usuarios (nome, email, idade) values (
 	1
 
 );
+
+update usuarios set email = "X" where nome = yuno;
+
+delete from postagems;
