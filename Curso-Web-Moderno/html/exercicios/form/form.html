@@ -1,6 +1,7 @@
 <h1>Formulário</h1>
 
-<form action="http://localhost:3003/usuarios" method="POST">
+<form method="POST">
+    <input type="hidden" name="id" value="3">
 
     <input type="text" name="Nome">
     <input type="password" name="Senha">
@@ -21,13 +22,16 @@
         <option value="rj">Rio de Janeiro</option>
     </select>
 
-    <select name="Interesses" multiple size="4">
+    <select name="Interesses" multiple size="6">
         <option value="js">Js</option>
         <option value="Delphi">Delphi</option>
         <option value="Front">Front</option>
+        <option value="back-end">Back-end</option>
+        <option value="nodejs">NodeJs</option>
     </select>
 
-    <button>Incluir</button>
+    <button formaction="http://localhost:3003/usuarios">Incluir</button>
+    <button formaction="http://localhost:3003/usuarios/3">Alterar</button>
 
 </form>
 
