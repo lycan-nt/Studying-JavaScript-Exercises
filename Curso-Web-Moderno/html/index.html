@@ -19,11 +19,12 @@
     </header>        
 
     <nav>
-        <a href="exercicios/teste.html">00-Teste | </a>
-        <a href="exercicios/texto1.html">01 - Exercicio |</a>
-        <a href="exercicios/texto2.html">02 - Exercicio |</a>
-        <a href="exercicios/listas.html">03 - Exercicio |</a>
-        <a href="exercicios/listaAninhada.html">04 - Exercicio</a>
+        <a href wm-nav="exercicios/teste.html">00-Teste | </a>
+        <a href wm-nav="exercicios/texto1.html">01 - Exercicio |</a>
+        <a href wm-nav="exercicios/texto2.html">02 - Exercicio |</a>
+        <a href wm-nav="exercicios/listas.html">03 - Exercicio |</a>
+        <a href wm-nav="exercicios/listaAninhada.html">04 - Exercicio |</a>
+        <a href wm-nav="exercicios/links.html">05-links</a>
     </nav>
     <section id="conteudo"></section>
 
@@ -33,16 +34,15 @@
     </footer> 
     
     <script>
-        document.querySelectorAll('a').forEach( link => {
+        document.querySelectorAll('[wm-nav]').forEach( link => {
             const conteudo = document.getElementById('conteudo')
            
             link.onclick = function(e) {
                e.preventDefault()
                    
-                fetch(link.href)
+                fetch(link.getAttribute('wm-nav'))
                     .then(resp => resp.text())
                     .then(html => conteudo.innerHTML = html)
-
             }
         })
     </script>
