@@ -13,6 +13,17 @@
         
             var inputElement = document.querySelector("div#app input")
             console.log(inputElement)    
+
+            var inputElementValue = document.querySelector('input[name=Nome]')  
+
+            var btnElement = document.querySelector('button.botao')
+            btnElement.onclick = function () {
+
+                var text = inputElementValue.value
+                alert(text)
+                alert('Botão clicado')
+  
+            }
         
         </script>
     </body>
