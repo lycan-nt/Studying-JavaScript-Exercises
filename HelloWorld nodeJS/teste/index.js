@@ -22,6 +22,10 @@ app.get('/cad', function(req, res){
     res.render('formulario')
 })
 
+app.post('/add', function(req, res){
+    res.send('Formulario Recebido!')
+})
+
 app.listen(8080, function() {
     console.log('Server online!')
 })
