@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Exercicio 03</title>
+    </head>
+    <body>
+
+        <ul id="lista">
+
+            
+            
+        </ul>
+        
+
+        <script>
+        
+            var nomes = ['Felipe', 'Marcella', 'Teste']
+
+            var listaElement = document.querySelector('#lista')
+         
+
+            for(i=0; i < nomes.length; i++){
+                var itemElement = document.createElement('li')
+                var textElement = document.createTextNode(nomes[i])
+                itemElement.appendChild(textElement)
+                listaElement.appendChild(itemElement) 
+            }
+
+        </script>        
+    </body>
+</html>
