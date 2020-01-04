@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Exercicio 01</title>
+    </head>
+    <body>
+
+        <button id="app">Clique Aqui</button> <br><br>
+        <div class="box"></div>
+
+        <script>
+        
+            var btnElement = document.querySelector('#app')
+
+            var boxElement = document.querySelector('.box')
+
+            btnElement.onclick = function(){
+             
+            var box = document.createElement('div')
+            box.style.width = 100;
+            box.style.height = 100;
+            box.style.backgroundColor = '#f00';
+            box.style.margin = 10;
+
+            boxElement.appendChild(box)    
+ 
+            }
+
+        </script>
+    </body>
+</html>
