@@ -15,13 +15,7 @@ const bodyParser = require('body-parser')
     app.use(bodyParser.urlencoded({extended: false}))
     app.use(bodyParser.json())
 
-    //Conexão com o banco de dados mySql
-const Sequelize = require('sequelize')
-const sequelize = new Sequelize('test', 'root', '131216',{
-    host: "localhost",
-    dialect: "mysql"
 
-})
 
 //Rotas
 app.get('/cad', function(req, res){
