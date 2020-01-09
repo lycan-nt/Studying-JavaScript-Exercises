@@ -6,6 +6,8 @@ const handlebars = require('express-handlebars')
 
 const bodyParser = require('body-parser')
 
+const Post = require('./models/Post')
+
 //config
     //Templade Engine
     app.engine('handlebars', handlebars({defaultLayout: 'main'}))
@@ -23,8 +25,15 @@ app.get('/cad', function(req, res){
 })
 
 app.post('/add', function(req, res){
+    Post.create({
+        titulo: req.body.titulo,
+        conteudo: req.body.conteudo
+    }).then(function(){
+        res.send('Post criando com sucesso!')
+    }).catch(function(erro){
+        res.send('Houve um erro: ' + erro)
+    })
     
-    res.send('Texto: ' + req.body.nome + ' Conteudo: ' + req.body.conteudo)
 })
 
 app.listen(8080, function() {
