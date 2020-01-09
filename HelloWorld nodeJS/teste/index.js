@@ -26,7 +26,7 @@ app.get('/cad', function(req, res){
 
 app.post('/add', function(req, res){
     Post.create({
-        titulo: req.body.titulo,
+        titulo: req.body.nome,
         conteudo: req.body.conteudo
     }).then(function(){
         res.send('Post criando com sucesso!')
