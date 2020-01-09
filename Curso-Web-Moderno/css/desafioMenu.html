@@ -7,7 +7,47 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <style>
-        /* ... */
+        body{
+            background: #ddd;
+            margin: 50px;
+        }
+
+        header.cabecalho {
+            margin: 0;
+            padding: 0;
+                  
+        }
+
+        nav.menu ul li, .autentificacao, div.logo {
+            list-style: none;
+            display: inline;
+        }
+
+        div.logo a, nav.menu ul li a, .autentificacao a {
+            float: left;
+            border: 1px solid #f00;
+            width: 6.0em;
+            font: 0.68em Verdana, Arial, Helvetica, sans-serif; 
+            background: #f1f1f1;
+            color: #333;
+            text-align: center;
+            padding: 0 0.2em 0.2em 0;
+            text-decoration: none;
+            
+           }
+
+           nav.menu a:hover{
+               background: #999;
+               color: #fff;
+               border-color: #00f;
+               border-color: #000 #fafafa #fafafa #000;
+           }
+
+      
+         
+       
+
+   
     </style>
 </head>
 
@@ -37,7 +77,7 @@
                 </li>
             </ul>
         </nav>
-        <aside class="autenticacao">
+        <aside class="autentificacao">
             <a href="#login">Login</a>
             <a href="#registar" class="botao destaque">Registrar</a>
         </aside>
