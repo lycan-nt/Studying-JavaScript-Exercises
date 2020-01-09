@@ -9,13 +9,25 @@ var todos = [
 ]
 
 function rederTodos(){
+    listElement.innerHTML = ''
+
     for(todo of todos){
         var todoElement = document.createElement('li')
         var todoText = document.createTextNode(todo)
 
         todoElement.appendChild(todoText)
-        listElement.appendChild(todoelement)
+        listElement.appendChild(todoElement)
     }
 }
 
-rederTodos()
+
+
+function addTodo(){
+    var todoText = inputElement.value
+
+    todos.push(todoText)
+    inputElement.value = ''
+    rederTodos()
+}
+
+buttonElement.onclick = addTodo()
