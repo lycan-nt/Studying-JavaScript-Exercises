@@ -20,7 +20,7 @@ function rederTodos(){
     }
 }
 
-
+rederTodos()
 
 function addTodo(){
     var todoText = inputElement.value
@@ -30,4 +30,4 @@ function addTodo(){
     rederTodos()
 }
 
-buttonElement.onclick = addTodo()
+buttonElement.onclick = addTodo;
