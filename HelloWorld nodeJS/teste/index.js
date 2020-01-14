@@ -20,6 +20,13 @@ const Post = require('./models/Post')
 
 
 //Rotas
+app.get('/', function(req, res){
+    Post.all().then(function(posts){
+        res.render('home', {nome: "Felipe", sobNome: "D. Santos"})
+    })
+   
+})
+
 app.get('/cad', function(req, res){
     res.render('formulario')
 })
