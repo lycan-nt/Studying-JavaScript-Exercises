@@ -8,5 +8,5 @@ const sequelize = new Sequelize('postapp', 'root', '131216',{
 
 module.exports = {
     Sequelize: Sequelize,
-    sequelize: sequelize
+    sequelize: sequelize,
 }

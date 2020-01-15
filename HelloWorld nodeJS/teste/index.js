@@ -21,9 +21,9 @@ const Post = require('./models/Post')
 
 //Rotas
 app.get('/', function(req, res){
-    Post.all().then(function(posts){
-        res.render('home', {nome: "Felipe", sobNome: "D. Santos"})
-    })
+  // Post.all()
+   
+    res.render('home')
    
 })
 
@@ -36,7 +36,7 @@ app.post('/add', function(req, res){
         titulo: req.body.nome,
         conteudo: req.body.conteudo
     }).then(function(){
-        res.send('Post criando com sucesso!')
+        res.redirect('/')
     }).catch(function(erro){
         res.send('Houve um erro: ' + erro)
     })
