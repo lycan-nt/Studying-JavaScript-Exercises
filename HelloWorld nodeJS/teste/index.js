@@ -21,9 +21,11 @@ const Post = require('./models/Post')
 
 //Rotas
 app.get('/', function(req, res){
-  // Post.all()
+    Post.findAll({order: [['id', 'DESC']]}).then(function(posts){
+    res.render('home', {posts: posts})
+   })
    
-    res.render('home')
+    
    
 })
 
