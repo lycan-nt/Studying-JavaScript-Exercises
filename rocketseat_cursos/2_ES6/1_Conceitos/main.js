@@ -1,6 +1,6 @@
-alert('Teste')
+alert('Ola')
 
-class Teste{
+class TESTESSSS{
     metodo(){
         
     }
