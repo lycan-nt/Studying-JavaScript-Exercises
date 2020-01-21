@@ -10,6 +10,7 @@
   },
   "scripts": {
     "dev": "babel ./main.js -o ./bundle.js -w",
-    "devCss": "babel 1_Classes/main.js -o 1_Classes/bundles.js -w"
+    "devCss": "babel 1_Classes/main.js -o 1_Classes/bundles.js -w",
+    "dev2": "babel 2_ConstLet/main.js -o 2_ConstLet/bundle.js -w"
   }
 }
