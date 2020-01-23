@@ -14,6 +14,7 @@
     "dev2": "babel 2_ConstLet/main.js -o 2_ConstLet/bundle.js -w",
     "dev3": "babel 3_Operacao_Array/main.js -o 3_Operacao_Array/bundle.js -w",
     "dev4": "babel 4_ArrowFunction/main.js -o 4_ArrowFunction/bundle.js -w",
-    "dev5": "babel 5_ValoresPadroes/main.js -o 5_ValoresPadroes/bundle.js -w"
+    "dev5": "babel 5_ValoresPadroes/main.js -o 5_ValoresPadroes/bundle.js -w",
+    "dev6": "babel 6_Desestruturacao/main.js -o 6_Desestruturacao/bundle.js -w"
   }
 }
