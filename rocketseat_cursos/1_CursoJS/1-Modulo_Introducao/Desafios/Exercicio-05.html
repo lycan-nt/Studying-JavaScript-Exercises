@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Exercicio 5</title>
+    </head>
+    <body>
+        <script>
+        
+            var usuarios = [
+                {
+                    nome: "Felipe D. Santos",
+                    habilidades:['C#', 'javascript', 'pascal'] 
+                },
+
+                {
+                    nome: "Marcella D. Santos",
+                    habilidades: ['Vuejs', 'nodejs', 'angular']
+                }
+            ]
+
+           
+            usuario = [usuarios[0]]
+          
+            for (let resultado of usuario) {
+                //habilidades = []
+                habilidades = resultado.habilidades.join(',')
+                console.log('O ' + resultado.nome + ' possui as habilidades: ' + habilidades)
+            }
+
+            usuario = [usuarios[1]]
+            for (let resultado of usuario) {
+                habilidades = resultado.habilidades.join(',')
+                console.log(`A ${resultado.nome} possui as habilidades: ${habilidades}`)
+            }
+
+
+            
+        
+        </script>
+    </body>
+</html>
