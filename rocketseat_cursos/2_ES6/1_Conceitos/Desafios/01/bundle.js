@@ -31,7 +31,6 @@ function () {
   _createClass(Usuarios, [{
     key: "isAdmin",
     value: function isAdmin() {
-      // this.admin = '';
       if (this.admin == true) {
         console.log('Admintrador!');
       } else console.log('Não é ADM');
@@ -57,8 +56,7 @@ function (_Usuarios) {
   }
 
   return Admin;
-}(Usuarios); //Admin.admin = true;
-
+}(Usuarios);
 
 var user1 = new Usuarios('marcella@gmail.com', '9596');
 var user2 = new Admin('lycan.felipe@gmail.com', '131216');

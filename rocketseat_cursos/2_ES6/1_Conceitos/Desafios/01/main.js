@@ -7,7 +7,7 @@ class Usuarios{
 
     isAdmin(){
 
-       // this.admin = '';
+   
         if(this.admin == true){
             console.log('Admintrador!')
         }else(console.log('Não é ADM'))
@@ -24,7 +24,7 @@ class Admin extends Usuarios{
     }
     
 }
-//Admin.admin = true;
+
 
 let user1 = new Usuarios('marcella@gmail.com', '9596');
 let user2 = new Admin('lycan.felipe@gmail.com', '131216');
