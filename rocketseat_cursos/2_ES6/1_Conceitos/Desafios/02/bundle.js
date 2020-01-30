@@ -2,11 +2,11 @@
 
 var usuario = [{
   nome: 'Diego',
-  idade: '23',
+  idade: 23,
   empresa: 'RocktSeat'
 }, {
   nome: 'Gabriel',
-  idade: '15',
+  idade: 15,
   empresa: 'RocketSeat'
 }, {
   nome: 'Lucas',
@@ -14,7 +14,7 @@ var usuario = [{
   empresa: 'RocktSeat'
 }];
 var idade = [];
-idade = usuario.map(function () {
-  var idade = usuario.idade;
+idade = usuario.map(function (elem) {
+  return elem.idade;
 });
 console.log(idade);
