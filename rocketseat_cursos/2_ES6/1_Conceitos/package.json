@@ -19,6 +19,7 @@
     "dev7": "babel 7_OperadoresRestSpread/main.js -o 7_OperadoresRestSpread/bundle.js -w",
     "dev8": "babel 8_TempladeLiterals/main.js -o 8_TempladeLiterals/bundle.js -w",
     "devDes": "babel Desafios/01/main.js -o Desafios/01/bundle.js -w",
-    "devDes2": "babel Desafios/02/main.js -o Desafios/02/bundle.js -w"
+    "devDes2": "babel Desafios/02/main.js -o Desafios/02/bundle.js -w",
+    "devDes3": "babel Desafios/03/main.js -o Desafios/03/bundle.js -w"
   }
 }

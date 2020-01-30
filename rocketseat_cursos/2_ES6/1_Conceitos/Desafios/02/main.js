@@ -10,3 +10,8 @@ idade = usuario.map((elem) => {
 });
 
 console.log(idade);
+
+let maior18 = usuario.filter(function(elem){
+    return elem.idade >= 18
+} );
+console.log(maior18);
