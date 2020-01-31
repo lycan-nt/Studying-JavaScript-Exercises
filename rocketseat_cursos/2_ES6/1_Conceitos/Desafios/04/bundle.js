@@ -24,4 +24,18 @@ console.log(estado);
 
 var cidade = _objectSpread({}, empresa.endereco).cidade;
 
-console.log(cidade);
+console.log(cidade); //---------------------------------------------------
+
+function mostraInfo(usuario) {
+  var nome = _objectSpread({}, usuario).nome;
+
+  var idade = _objectSpread({}, usuario).idade;
+
+  return "".concat(nome, " tem ").concat(idade, " anos");
+}
+
+;
+console.log(mostraInfo({
+  nome: 'Felipe D. Santos',
+  idade: 24
+}));

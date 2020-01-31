@@ -14,3 +14,12 @@ console.log(estado);
 
 let cidade = {...empresa.endereco}.cidade;
 console.log(cidade);
+
+//---------------------------------------------------
+
+function mostraInfo(usuario){
+   let nome = {...usuario}.nome;
+   let idade = {...usuario}.idade;
+    return `${nome} tem ${idade} anos`;
+};
+console.log(mostraInfo({nome: 'Felipe D. Santos', idade: 24}));
