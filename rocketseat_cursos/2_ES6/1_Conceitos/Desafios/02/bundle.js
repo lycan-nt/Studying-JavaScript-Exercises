@@ -26,3 +26,10 @@ var empresa = usuario.find(function (elem) {
   return elem.empresa === 'Google';
 });
 console.log(empresa);
+var mult = usuario.map(function (next) {
+  next.idade = next.idade * 2;
+  return next;
+});
+console.log(mult.filter(function (elem) {
+  return elem.idade < 50;
+}));

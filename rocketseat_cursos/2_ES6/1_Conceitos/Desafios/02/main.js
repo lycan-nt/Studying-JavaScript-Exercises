@@ -20,3 +20,10 @@ let empresa = usuario.find((elem) =>{
     return elem.empresa === 'Google'
 })
 console.log(empresa);
+
+let mult = usuario.map((next) =>{
+     next.idade = next.idade * 2
+     return next   
+})
+
+console.log(mult.filter((elem) => elem.idade < 50));
