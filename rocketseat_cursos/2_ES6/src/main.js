@@ -4,7 +4,7 @@ import classUsuario from './function'
 
 import Usuario, {idade} from './function'
 
-import { Usuario, idade as usuarioIdade } from './function';
+import { idade as usuarioIdade } from './function';
 
 console.log(idade);
 
