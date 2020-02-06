@@ -1,12 +1,12 @@
-alert('Testando');
+const minhaPromise = () => new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve('ok');
+        }, 2000);
+})
 
-import classUsuario from './function'
+async function execultaPromise() {
+    const response = await minhaPromise();
+    console.log(response);
+}
 
-import Usuario, {idade} from './function'
-
-import { idade as usuarioIdade } from './function';
-
-console.log(idade);
-
-const teste = classUsuario.infor();
-console.log(teste);
+execultaPromise();
