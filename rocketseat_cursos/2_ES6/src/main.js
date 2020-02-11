@@ -1,12 +1,15 @@
-const minhaPromise = () => new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve('ok');
-        }, 2000);
-})
+import axios from 'axios';
 
-async function execultaPromise() {
-    const response = await minhaPromise();
-    console.log(response);
+class Api {
+    static async getUserInfo(username){
+        try{
+        const response = await axios.get(`https://api.github.com/users/${username}`);
+        console.log(response);
+        } catch(err){
+            console.log('Opá ouve um erro: ' + err)
+        }
+      
+    }
 }
 
-execultaPromise();
+Api.getUserInfo('lycan-nt');
