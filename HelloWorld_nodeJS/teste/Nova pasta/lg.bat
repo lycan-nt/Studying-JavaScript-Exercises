@@ -1,0 +1,1 @@
+nircmd.exe savescreenshot D:\NextDev\Dev-Web\Studying-JavaSript-Exercises-master\Repositorios_git\HelloWorld_nodeJS\teste\%time:~0,2%%time:~3,2%.png
