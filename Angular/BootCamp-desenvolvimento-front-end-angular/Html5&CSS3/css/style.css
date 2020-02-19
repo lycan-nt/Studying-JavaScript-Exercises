@@ -1,3 +1,26 @@
 body {
     background: #EBC5C5;
+    margin-left: 100px;
+    margin-right: 200px;
+}
+
+header {
+    margin-top: 60px;
+}
+
+h1 {
+    color: red;
+    font-family: fantasy;
+}
+
+h2 {
+    font-family: fantasy;
+}
+
+p {
+    font-size: 18px;
+}
+
+img {
+    margin-bottom: 30px;
 }
