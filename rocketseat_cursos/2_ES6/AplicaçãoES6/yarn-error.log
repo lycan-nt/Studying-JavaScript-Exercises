@@ -1,0 +1,57 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js start
+
+PATH: 
+  C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Users\SYSALA1\AppData\Local\Microsoft\WindowsApps;C:\Users\SYSALA1\AppData\Roaming\npm;C:\Users\SYSALA1\AppData\Local\Yarn\bin;C:\Users\SYSALA1\AppData\Local\Programs\Microsoft VS Code\bin
+
+Yarn version: 
+  1.21.1
+
+Node version: 
+  12.14.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\Users\SYSALA1\Documents\Felipe\Estudos\Programação\NextDev\Studying-JavaSript-Exercises\rocketseat_cursos\2_ES6\AplicaçãoES6\package.json: Unexpected token { in JSON at position 88
+      at JSON.parse (<anonymous>)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Program Files (x86)\Yarn\lib\cli.js:310:30)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "AppES6",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+  }
+  
+  {
+    "dependencies": {
+      "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
+      "axios": "^0.19.2"
+    },
+    "devDependencies": {
+      "@babel/cli": "^7.8.3",
+      "@babel/core": "^7.8.3",
+      "@babel/plugin-transform-async-to-generator": "^7.8.3",
+      "@babel/polyfill": "^7.8.3",
+      "@babel/preset-env": "^7.8.3",
+      "babel-loader": "^8.0.6",
+      "webpack": "^4.41.5",
+      "webpack-cli": "^3.3.10",
+      "webpack-dev-server": "^3.10.2"
+    },
+    "scripts": {
+      "devT": "webpack-dev-server --mode=development"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
