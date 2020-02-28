@@ -28,8 +28,13 @@ app.post('/upload', (req, res) => {
 
         res.end('Concluido com sucesso');
     });
-})
+});
 
-
+app.post('/formulario', (req, res) => {
+    res.send({
+        ...req.body,
+        id: 1
+     });
+});
 
 app.listen(8080, () => console.log('Server Online!!!'));
