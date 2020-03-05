@@ -5,7 +5,7 @@ class Teste{
 
     }
 
-    outroMetodo(){
+    outroMetodo2020(){
 
     }
 }
