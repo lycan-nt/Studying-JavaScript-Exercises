@@ -4,9 +4,58 @@
     <head>
         <meta charset='utf-8'>
         <title>DESAFIO</title>
+
+        <style>
+            ul{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                font-family: sans-serif;
+            }
+
+            li{
+                clear: both;
+                margin-top: 20px;
+            }
+
+            img{
+                width: 80px;
+                float: left;
+                margin-right: 10px;
+            }
+
+            strong{
+                font-size: 20px;
+            }
+
+            p {
+                margin: 5px 0px;
+            }
+        </style>
     </head>
 
     <body>
+
+        <form id="repo-form">
+            <input type='text' name='repository'>
+            <button type='submit'>Adicionar</button>
+        </form>
+
+        <ul id='repo-list'>
+            <li>
+                <img src='https://avatars0.githubusercontent.com/u/28929274?v=4'>
+                <strong>Rocket Seat</strong>
+                <p>Tire a sua ideia do papel.</p>
+                <a target='_blank' href='http://github.com/rocketseat/rocketseat.com.br'>Acessar</a>
+            </li>
+
+            <li>
+                <img src='https://avatars0.githubusercontent.com/u/28929274?v=4'>
+                <strong>Felipe D. Santos</strong>
+                <p>NextDev.</p>
+                <a target='_blank' href='http://github.com/rocketseat/rocketseat.com.br'>Acessar</a>
+            </li>
+        </ul>
 
         <script src='bundle.js'></script>
     </body>
