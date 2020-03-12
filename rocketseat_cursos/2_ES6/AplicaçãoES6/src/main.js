@@ -25,9 +25,11 @@ class App {
             return;
         }
 
-        const response = await api.get(`/repos/${repoInput}`);
 
-        const { name, description, html_url, owner: { avatar_url } } = response.data;
+        const response = await api.get(`/repos/${repoInput}`);
+      //  console.log(response);
+
+        const { name, description, html_url, avatar_url  } = response.data;
 
         this.repositories.push({
             name,
