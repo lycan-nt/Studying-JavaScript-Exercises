@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const app = express();
 
 //Iniciando o DB
-mongoose.connect()
+//mongoose.connect()
 
 //Primeira rota
 app.get('/', (req, res) => {
