@@ -5,7 +5,13 @@ const mongoose = require('mongoose');
 const app = express();
 
 //Iniciando o DB
-//mongoose.connect()
+mongoose.connect('mongodb://localhost:27017/nodeapi', 
+{ useNewUrlParser: true,
+useUnifiedTopology: true  });
+
+
+//{ useUnifiedTopology: true });
+// {useNewUrlParser: true}
 
 //Primeira rota
 app.get('/', (req, res) => {
@@ -16,4 +22,4 @@ app.get('/', (req, res) => {
 
 
 
-app.listen(1010);
+app.listen(3001);
