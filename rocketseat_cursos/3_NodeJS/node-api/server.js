@@ -1,21 +1,29 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const requireDir = require('require-dir');
 
 //Iniciando o app
 const app = express();
 
 //Iniciando o DB
-mongoose.connect('mongodb://localhost:27017/nodeapi', 
+mongoose.connect('mongodb://localhost:27017/nodeapi2', 
 { useNewUrlParser: true,
-useUnifiedTopology: true  });
+useUnifiedTopology: true  }
+);
+requireDir('./src/models');
 
+const Product = mongoose.model('Product');
 
-//{ useUnifiedTopology: true });
-// {useNewUrlParser: true}
 
 //Primeira rota
 app.get('/', (req, res) => {
-    res.send('Hello World!');
+    Product.create({
+        title: 'Hello World',
+        description: 'NextDev Rumo ao proximo nivel',
+        url: 'lycan.felipe@gmail.com',
+    });
+    
+    return res.send('Hello World!');
 });
 
 
