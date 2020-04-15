@@ -1,11 +1,40 @@
-var nome = "Felipe D. Santos"
-var idade = 24
-var idade2 = 10;
-var frase = "Bora dormi"
+//==========================Introdução===========================
+// var nome = "Felipe D. Santos"
+// var idade = 24
+// var idade2 = 10;
+// var frase = "Bora dormi"
 
-//alert(`${nome} tem ${idade} anos`)
-//alert(idade + idade2);
+// //alert(`${nome} tem ${idade} anos`)
+// //alert(idade + idade2);
 
-console.log(nome);
-console.log(idade + idade2);
-console.log(frase.replace('dormi', 'codar!!!'));
+// console.log(nome);
+// console.log(idade + idade2);
+// console.log(frase.replace('dormi', 'codar!!!'));
+
+
+//==================================Array e dicionário=========================================
+
+// var lista = ["Felipe", "Marcella", "Yuno", "Floop"];
+// lista.push("Bryan");
+// lista.pop();
+// console.log(lista);
+// console.log(lista.reverse());
+// console.log(lista.toString());
+// console.log(lista.join("/"));
+// console.log(lista.length);
+// alert(lista[0]);
+
+const membro = [
+    {
+        Nome: "Felipe D. Santos",
+        Idade: "24"
+    },
+
+    {
+        Nome: "Marcella D. Santos",
+        Idade: 23
+    },
+
+];
+console.log(membro);
+alert(membro[1].Nome);
