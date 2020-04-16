@@ -24,17 +24,45 @@
 // console.log(lista.length);
 // alert(lista[0]);
 
-const membro = [
-    {
-        Nome: "Felipe D. Santos",
-        Idade: "24"
-    },
+// const membro = [
+//     {
+//         Nome: "Felipe D. Santos",
+//         Idade: "24"
+//     },
 
-    {
-        Nome: "Marcella D. Santos",
-        Idade: 23
-    },
+//     {
+//         Nome: "Marcella D. Santos",
+//         Idade: 23
+//     },
 
-];
-console.log(membro);
-alert(membro[1].Nome);
+// ];
+// console.log(membro);
+// alert(membro[1].Nome);
+
+
+//===========================================Condicionais, laço de repetição e date=================================
+
+// var idade = prompt("Qual sua idade?");
+
+// if(idade >= 18) {
+//     alert("Maior de idade");
+// } else {
+//     alert("Menor de idade");
+// }
+
+// var count = 0;
+
+// while(count < 5) {
+//     console.log(count);
+//     count ++
+// }
+
+// var count = 0;
+
+// for(i = count; i < 5; i++) {
+//     alert(i);
+
+// }
+
+// var data = new Date;
+// alert(data);
