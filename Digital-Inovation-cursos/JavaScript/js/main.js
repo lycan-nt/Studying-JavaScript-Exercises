@@ -66,3 +66,61 @@
 
 // var data = new Date;
 // alert(data);
+
+
+//==========================================================================================================
+
+// function soma(n1 , n2) {
+//     return n1 + n2  
+// }
+
+// function setReplace(frase, nome, novo_nome) {
+//     return frase.replace(nome, novo_nome);
+// }
+
+// alert(setReplace("Bora dormir", "dormir", "Codar!"));
+
+// alert(soma(10,10));
+
+// function validarIdade(idade) {
+//     var validar;
+//     if(idade >= 18) {
+//         validar = true;
+//     } else {
+//         validar = false;
+//     }
+
+//     return validar;
+// }
+
+// var idade = prompt("Qual sua idade?");
+// console.log(validarIdade(idade));
+
+//==================================================Manipulando elementos======================================
+
+function botao() {
+
+    document.querySelector("#agradeco").innerHTML = "<b>Obrigado por clicar<b>";
+    
+}
+
+function agradeco() {
+    window.open("https://web.digitalinnovation.one/");
+    // window.location.href("https://web.digitalinnovation.one/");
+}
+
+function trocar() {
+    // alert("Trocar texto");
+
+    document.getElementById("mousemove").innerHTML = "Obrigado";
+}
+
+function voltar() {
+    // alert("Trocar texto");
+
+    document.getElementById("mousemove").innerHTML = "Passe o mouse";
+}
+
+function load() {
+    alert("Hello World!");
+}

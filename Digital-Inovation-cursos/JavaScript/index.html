@@ -7,8 +7,14 @@
         <title>Minha Página</title>
     </head>
 
-    <body>
+    <body onload="load()">
         <h1>Pagina Inicial</h1>
+
+        <button type="button" onclick="botao()">Clique Aqui</button>
+
+        <h3 id="agradeco" onclick="agradeco()"></h3>
+
+        <p id="mousemove" onmouseover="trocar()" onmouseout="voltar()">Passe o mouse</p>
 
         <script src="js/main.js"></script>
     </body>
