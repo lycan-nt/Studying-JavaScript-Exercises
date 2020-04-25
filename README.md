@@ -6,9 +6,9 @@
 In this repository and where I saved my progress in studies, here you can find codes like (javascript / html / css, NodeJS, React, Bootstrap).
 
 ## Recent courses
--Modern Web with Udemy </br>
--Full stack programmer with RocketSeat </br>
--Several courses focused on javascript with digital innovation one </br>
+- Modern Web with Udemy </br>
+- Full stack programmer with RocketSeat </br>
+- Several courses focused on javascript with digital innovation one </br>
 
 ## Recent project
 
