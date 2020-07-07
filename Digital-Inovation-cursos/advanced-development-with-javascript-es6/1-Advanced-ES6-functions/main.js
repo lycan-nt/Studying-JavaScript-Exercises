@@ -18,6 +18,26 @@ var sumOld = function(a, b) {
 }
 console.log(sumOld(8,8));
 
-//--Arrouw Functions
+//--Arrow Functions
 var sum = (a, b) => a + b;
 console.log(sum(10,10));
+
+var mult = a => a * 2;
+console.log(mult(10));
+
+var createObj = () => ({ NextDev: true });
+console.log(createObj());
+
+//--Context
+var obj = {
+    showContext: function showContext() {
+        setTimeout( () => {
+            this.log("After 2000ms");
+        }, 2000 );
+    },
+
+    log: function log(value) {
+        console.log(value);
+    }
+}
+obj.showContext();
