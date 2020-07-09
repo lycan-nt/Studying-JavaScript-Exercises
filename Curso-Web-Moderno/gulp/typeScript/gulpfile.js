@@ -6,4 +6,9 @@ const tsProject = ts.createProject('tsconfig.json');
 function transformacaoTs() {
 
     return tsProject.src()
+    .pipe(tsProject())
+    .pipe(gulp.dest("build"))
+
 }
+
+exports.default = series(transformacaoTs);
