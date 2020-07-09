@@ -12,26 +12,32 @@
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 
     <script>
-        function myComponent1() {
-            return (
-                React.createElement("div", null, 
-                    React.createElement(myComponent2)
-                )               
+        const contextName = React.createContext("name");
 
+        function myComponent1() {
+            const name = "Felipe D. Santos";
+            return (
+                React.createElement(contextName.Provider, { value: name },
+                    React.createElement("div", { className: "component-1" }, 
+                        React.createElement(myComponent2, { name: name })
+                )  
+                )
+            
             );
         }
 
         function myComponent2() {
             return (
-                React.createElement("div", null, 
+                React.createElement("div", { className: "component-2" }, 
                     React.createElement(myComponent3)
                 )
             )
         }
 
         function myComponent3() {
+            
             return (
-                React.createElement("div", null, 
+                React.createElement("div", { className: "component-3" }, 
                     React.createElement(myComponent4)
                 )
             )
@@ -39,14 +45,19 @@
 
         function myComponent4() {
             return (
-                React.createElement("div", null, 
-                    React.createElement("p", null, "Component 4")
+                React.createElement(contextName.Consumer, null,
+                    (contextName) => (
+                        React.createElement("div", { className: "component-4" }, 
+                            React.createElement("p", null, contextName)
+                        )
+                )
+
                 )
             )
         }
 
         function myComponent() {
-            return React.createElement("div", null, React.createElement(myComponent1));
+            return React.createElement("div", { id: "components" }, React.createElement(myComponent1));
         }
 
         ReactDOM.render(
