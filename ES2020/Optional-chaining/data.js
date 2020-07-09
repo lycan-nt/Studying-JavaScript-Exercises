@@ -1,5 +1,5 @@
 export const data = {
-    user: [{
+    users: [{
         name: "Felipe",
         favorite_artists: [{
             name: "NOFX",
@@ -14,7 +14,7 @@ export const data = {
                 gender: "death metal"
             }
         },
-        
+
         
     ]
     }]
