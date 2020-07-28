@@ -1,60 +1,60 @@
-const contextName = React.createContext("name");
+const ContextName = React.createContext("name");
 
-function myComponent1() {
+function MyComponent1() {
     const name = "Felipe";
 
     return (
-        <contextName.Provider value={name}>
+        <ContextName.Provider value={name}>
             <div className="component-1">
-                <myComponent2 />
+                <MyComponent2 />
             </div>
-        </contextName.Provider>
+        </ContextName.Provider>
     )
 }
 
-function myComponent2() {
+function MyComponent2() {
 
     return (
         <div className="component-2">
-            <myComponent3 />
+            <MyComponent3 />
         </div>
     )
 }
 
-function myComponent3() {
+function MyComponent3() {
 
     return (
         <div className="component-3">
-            <myComponent4 />
+            <MyComponent4 />
         </div>
     )
 }
 
-function myComponent4() {
+function MyComponent4() {
 
     return (
-        <contextName.Consumer>
+        <ContextName.Consumer>
             {
-                (contextName) => {
+                (ContextName) => {
                     <div className="component-4">
-                        <p>{contextName}</p>
+                        <p>{ContextName}</p>
                     </div>
                 }
             }
-        </contextName.Consumer>
+        </ContextName.Consumer>
     )
 }
 
-function myComponent() {
+function MyComponent() {
 
     return (
         <div id="components">
-            <myComponent1 />
+            <MyComponent1 />
         </div>
     )
 }
 
 ReactDOM.render(
-    <myComponent />,
+    <MyComponent />,
     document.getElementById("app")
 )

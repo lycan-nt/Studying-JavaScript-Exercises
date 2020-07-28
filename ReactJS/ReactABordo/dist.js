@@ -1,39 +1,39 @@
-const contextName = React.createContext("name");
+const ContextName = React.createContext("name");
 
-function myComponent1() {
+function MyComponent1() {
   const name = "Felipe";
-  return /*#__PURE__*/React.createElement(contextName.Provider, {
+  return /*#__PURE__*/React.createElement(ContextName.Provider, {
     value: name
   }, /*#__PURE__*/React.createElement("div", {
     className: "component-1"
-  }, /*#__PURE__*/React.createElement("myComponent2", null)));
+  }, /*#__PURE__*/React.createElement(MyComponent2, null)));
 }
 
-function myComponent2() {
+function MyComponent2() {
   return /*#__PURE__*/React.createElement("div", {
     className: "component-2"
-  }, /*#__PURE__*/React.createElement("myComponent3", null));
+  }, /*#__PURE__*/React.createElement(MyComponent3, null));
 }
 
-function myComponent3() {
+function MyComponent3() {
   return /*#__PURE__*/React.createElement("div", {
     className: "component-3"
-  }, /*#__PURE__*/React.createElement("myComponent4", null));
+  }, /*#__PURE__*/React.createElement(MyComponent4, null));
 }
 
-function myComponent4() {
-  return /*#__PURE__*/React.createElement(contextName.Consumer, null, contextName => {
+function MyComponent4() {
+  return /*#__PURE__*/React.createElement(ContextName.Consumer, null, ContextName => {
     /*#__PURE__*/
     React.createElement("div", {
       className: "component-4"
-    }, /*#__PURE__*/React.createElement("p", null, contextName));
+    }, /*#__PURE__*/React.createElement("p", null, ContextName));
   });
 }
 
-function myComponent() {
+function MyComponent() {
   return /*#__PURE__*/React.createElement("div", {
     id: "components"
-  }, /*#__PURE__*/React.createElement("myComponent1", null));
+  }, /*#__PURE__*/React.createElement(MyComponent1, null));
 }
 
-ReactDOM.render( /*#__PURE__*/React.createElement("myComponent", null), document.getElementById("app"));
+ReactDOM.render( /*#__PURE__*/React.createElement(MyComponent, null), document.getElementById("app"));
