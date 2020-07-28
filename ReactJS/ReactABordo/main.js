@@ -35,11 +35,11 @@ function MyComponent4() {
     return (
         <ContextName.Consumer>
             {
-                (ContextName) => {
+                (ContextName) => (
                     <div className="component-4">
                         <p>{ContextName}</p>
                     </div>
-                }
+                )
             }
         </ContextName.Consumer>
     )

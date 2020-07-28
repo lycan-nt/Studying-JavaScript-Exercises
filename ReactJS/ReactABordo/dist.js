@@ -22,12 +22,9 @@ function MyComponent3() {
 }
 
 function MyComponent4() {
-  return /*#__PURE__*/React.createElement(ContextName.Consumer, null, ContextName => {
-    /*#__PURE__*/
-    React.createElement("div", {
-      className: "component-4"
-    }, /*#__PURE__*/React.createElement("p", null, ContextName));
-  });
+  return /*#__PURE__*/React.createElement(ContextName.Consumer, null, ContextName => /*#__PURE__*/React.createElement("div", {
+    className: "component-4"
+  }, /*#__PURE__*/React.createElement("p", null, ContextName)));
 }
 
 function MyComponent() {
