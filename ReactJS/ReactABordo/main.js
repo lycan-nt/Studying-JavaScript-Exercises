@@ -4,19 +4,24 @@ function MyComponent1() {
     const name = "Felipe";
 
     return (
-        <ContextName.Provider value={name}>
+
             <div className="component-1">
-                <MyComponent2 />
+                <MyComponent2>
+                    <p>Hello World!</p>
+                </MyComponent2>
             </div>
-        </ContextName.Provider>
+
     )
 }
 
-function MyComponent2() {
+function MyComponent2(porps) {
 
     return (
         <div className="component-2">
-            <MyComponent3 />
+            <div>
+                <header>{porps.children}</header>
+                <footer></footer>
+            </div>
         </div>
     )
 }
@@ -33,15 +38,13 @@ function MyComponent3() {
 function MyComponent4() {
 
     return (
-        <ContextName.Consumer>
-            {
-                (ContextName) => (
+
+
                     <div className="component-4">
-                        <p>{ContextName}</p>
+                        <p>Component 4</p>
                     </div>
-                )
-            }
-        </ContextName.Consumer>
+
+
     )
 }
 

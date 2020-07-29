@@ -2,11 +2,9 @@ const ContextName = React.createContext("name");
 
 function MyComponent1() {
   const name = "Felipe";
-  return /*#__PURE__*/React.createElement(ContextName.Provider, {
-    value: name
-  }, /*#__PURE__*/React.createElement("div", {
+  return /*#__PURE__*/React.createElement("div", {
     className: "component-1"
-  }, /*#__PURE__*/React.createElement(MyComponent2, null)));
+  }, /*#__PURE__*/React.createElement(MyComponent2, null));
 }
 
 function MyComponent2() {
@@ -22,9 +20,9 @@ function MyComponent3() {
 }
 
 function MyComponent4() {
-  return /*#__PURE__*/React.createElement(ContextName.Consumer, null, ContextName => /*#__PURE__*/React.createElement("div", {
+  return /*#__PURE__*/React.createElement("div", {
     className: "component-4"
-  }, /*#__PURE__*/React.createElement("p", null, ContextName)));
+  }, /*#__PURE__*/React.createElement("p", null, "Component 4"));
 }
 
 function MyComponent() {
