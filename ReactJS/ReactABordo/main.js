@@ -7,19 +7,19 @@ function MyComponent1() {
 
             <div className="component-1">
                 <MyComponent2>
-                    <p>Hello World!</p>
+                    <MyComponent4 name={name} />
                 </MyComponent2>
             </div>
 
     )
 }
 
-function MyComponent2(porps) {
-
+function MyComponent2(props) {
+    
     return (
         <div className="component-2">
             <div>
-                <header>{porps.children}</header>
+                <header>{props.children}</header>
                 <footer></footer>
             </div>
         </div>
@@ -35,15 +35,20 @@ function MyComponent3() {
     )
 }
 
-function MyComponent4() {
+function MyComponent4(props) {
+    const [ idade, setIdade ] = React.useState(25);
+    const [ phone, setPhone ] = React.useState('77 11111-11111');
+
+    setTimeout(function() {
+        setIdade(26);
+        setPhone('77 22222-0222');
+    }, 1000);
 
     return (
 
-
-                    <div className="component-4">
-                        <p>Component 4</p>
-                    </div>
-
+        <div className="component-4">
+            <p>{props.name} - {idade} - {phone}</p>
+        </div>
 
     )
 }
