@@ -1,5 +1,4 @@
-# Studying-JavaScript-Exercises
-
+# Web-Development-Studies
 ## Description
 
 
