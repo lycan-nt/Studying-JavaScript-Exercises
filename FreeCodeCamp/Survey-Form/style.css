@@ -11,10 +11,14 @@ body
     flex-direction: column;
     Align-items: center;
 
-    background: url("https://www.google.com/search?q=programa%C3%A7%C3%A3o&sxsrf=ALeKk03ca0r0j230sX4cOVHoJYtUtE13HQ:1596481830032&source=lnms&tbm=isch&sa=X&ved=2ahUKEwio6Pmi3v_qAhXyL7kGHdDECHIQ_AUoAXoECA4QAw&biw=1366&bih=657#imgrc=ASIVRVy5wgeL2M&imgdii=s2HiXnVJ8y_WWM");
+    background: url("https://3.bp.blogspot.com/-Lw4GpBtFfLk/WYZGxRWSo7I/AAAAAAAAYVE/9dq7ITlqN-kW-0LvhEdjQ4O8QUdVuBF-gCLcBGAs/s1600/mtech.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+    background-attachment: fixed ;
+
+    color: black;
 }
+
 
 header 
 {
@@ -27,11 +31,14 @@ header
 header h1
 {
     font-size: 50px;
+    font-weight: 10px;
 }
 
 header p
 {
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: 10px;
+
 }
 
 
@@ -43,7 +50,10 @@ section
 
     height: 50%;
     width: 50%;
-    border: solid 2px red;
+    border-radius: 8px;
+
+    background-color: blueviolet;
+    opacity: 0.9;
 }
 
 section form
