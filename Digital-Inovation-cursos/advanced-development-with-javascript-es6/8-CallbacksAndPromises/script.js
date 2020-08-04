@@ -58,3 +58,32 @@ function doAll()
 
 doAll();
 
+//Primises
+const doSometingPromise = new Promise((resolve, reject) => {
+    setTimeout(function() {
+        resolve('First Data');
+    }, 1000);
+});
+
+const doOtherThingPromise = new Promise((resolve, reject) => {
+    setTimeout(function() {
+        resolve('Second Data');
+    }, 1000);
+});
+
+doSometingPromise
+    .then((data) => {
+        console.log(`This is Promise ${data}`);
+        return doOtherThingPromise;
+    })
+    .then((data2) => {
+        console.log(`This is Promise ${data2}`);
+    })
+    .catch((error) => {
+        console.log(`This is error in Promisse: ${error}`);
+    })
+
+Promise.all([doSometingPromise, doOtherThingPromise])
+    .then((data) => {
+        console.log(`Promises ${data}`);
+    })
