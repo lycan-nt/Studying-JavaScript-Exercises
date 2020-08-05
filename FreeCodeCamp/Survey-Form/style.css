@@ -63,7 +63,7 @@ section form
     margin: 20px;
 }
 
-section form div 
+section form div#div
 {
     margin: 15px;
     display: flex;
@@ -76,10 +76,72 @@ section form div label
     margin-bottom: 5px;
 }
 
-section form div input
+section form div#div input
 {
     height: 25px;
     width: 350px;
 }
+
+section form div
+{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+section form div#sql p
+{
+    display: inline;
+
+}
+
+section form #sql p.title-sql
+{
+    font-size: 25px;
+}
+
+
+section form #sql p
+{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+ section form div#lang
+{
+    display: inline;
+    
+}
+
+section form div#lang p
+{
+    font-size: 25px;
+}
+
+section form #text-area p
+{
+    font-size: 25px;
+}
+
+section form #text-area textarea
+{
+    height: 150px;
+}
+
+section form #button button
+{
+    background-color: cornflowerblue;
+    height: 30px;
+    border-radius: 8px;
+}
+
+section form #button button:hover
+{
+    cursor: pointer;
+    background-color: cornsilk;
+}
+
 
 
