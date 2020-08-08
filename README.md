@@ -19,3 +19,7 @@ Description: This is a simple page created for a course challenge Responsive Web
 
 ### Image
 <img src='https://github.com/lycan-nt/Web-Development-Studies/blob/master/FreeCodeCamp/Survey-Form/SurveyForm.png'>
+
+# The mind that opens up to a new idea will never return to its original size '. (Albert Einstein)
+
+<img src="https://github.com/lycan-nt/my_portyfolio/blob/master/img.jpg">
