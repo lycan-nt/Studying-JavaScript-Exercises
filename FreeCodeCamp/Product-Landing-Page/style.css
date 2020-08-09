@@ -9,13 +9,22 @@ body
     background-color: #EEEEEE;
 }
 
-header
+header 
 {
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+#header
+{
+   
     display: flex;
     flex-direction: row;
     
     background-color: #FBFBFB;
     border-bottom: solid 2px gray;
+ 
 }
 
 header nav 
@@ -26,6 +35,7 @@ header nav
     margin-right: 10px;
 
     font-family: 'Berkshire Swash', cursive;
+    
 }
 
 header p
@@ -87,7 +97,7 @@ section #content input
     align-self: center;
 }
 
-section #content button
+section #content #button
 {
     height: 25px;
     width: 200px;
@@ -99,7 +109,7 @@ section #content button
     color: white;
 }
 
-section #content button:hover
+section #content #button:hover
 {
     cursor: pointer;
     height: 30px;
