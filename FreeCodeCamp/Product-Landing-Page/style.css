@@ -4,6 +4,11 @@
     padding: 0;
 }
 
+body
+{
+    background-color: #EEEEEE;
+}
+
 header
 {
     display: flex;
@@ -45,6 +50,57 @@ header nav a:hover
 {
     color: black;
     font-size: 30px;
+}
+
+section
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+section #content
+{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    
+}
+
+section #content p
+{
+    font-size: 30px;
+    font-weight: 20px;
+    
+    margin-bottom: 15px;
+}
+
+section #content input
+{
+    margin-bottom: 10px;
+    height: 25px;
+    width: 250px;
+    align-self: center;
+}
+
+section #content button
+{
+    height: 25px;
+    width: 200px;
+    align-self: center;
+    border-radius: 4px;
+
+    font-size: 20px;
+    background-color: rebeccapurple;
+    color: white;
+}
+
+section #content button:hover
+{
+    cursor: pointer;
+    height: 30px;
+    width: 210px;
 }
 
 
