@@ -161,6 +161,83 @@ section #nav-content div .text-content p#description
     font-size: 15px;
 }
 
+section #video-content
+{
+    margin-bottom: 100px;
+}
+
+section #pricing
+{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+}
+
+@media (max-width: 700px)
+{
+    section #pricing
+    {
+        display: grid;
+        grid-template-columns: 200px;
+    }
+    
+}
 
 
+section #pricing 
+div#pac-front, 
+div#pac-back, 
+div#pac-full
+{
+    width: 140px;
+    height: 150px;
+    border: solid 2px black; 
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+section #pricing div#pac-front #front h1
+{
+    background-color: #DDDDDD;
+    margin-bottom: 15px;
+    font-family: 'Berkshire Swash', cursive;
+} 
+
+
+section #pricing div#pac-front #front h2
+{
+    background-color: #DDDDDD;
+    font-family: 'Berkshire Swash', cursive;
+    margin-top: 20px;
+}
+
+section #pricing div#pac-back #back h1
+{
+    background-color: #DDDDDD;
+    margin-bottom: 15px;
+    font-family: 'Berkshire Swash', cursive;
+} 
+
+
+section #pricing div#pac-back #back h2
+{
+    background-color: #DDDDDD;
+    font-family: 'Berkshire Swash', cursive;
+    margin-top: 20px;
+}
+
+section #pricing div#pac-full #full h1
+{
+    background-color: #DDDDDD;
+    margin-bottom: 15px;
+    font-family: 'Berkshire Swash', cursive;
+} 
+
+
+section #pricing div#pac-full #full h2
+{
+    background-color: #DDDDDD;
+    font-family: 'Berkshire Swash', cursive;
+    margin-top: 20px;
+}
 
