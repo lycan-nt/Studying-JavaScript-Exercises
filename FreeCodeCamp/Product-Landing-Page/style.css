@@ -66,6 +66,9 @@ section #content
     flex-direction: column;
     align-self: center;
     margin-bottom: 100px;
+
+    font-family: 'Berkshire Swash', cursive;
+
 }
 
 section #content p
@@ -105,7 +108,10 @@ section #content button:hover
 
 section #nav-content
 {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+
+    font-family: 'Berkshire Swash', cursive;
+
 }
 
 section #nav-content div
@@ -119,9 +125,10 @@ section #nav-content div
     flex-direction: row;
 }
 
-section #nav-content div a img
+section #nav-content div img
 {
     width: 70px;
+    height: 60px;
     margin-right: 15px;
 }
 
