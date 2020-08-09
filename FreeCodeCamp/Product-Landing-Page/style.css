@@ -65,7 +65,7 @@ section #content
     display: flex;
     flex-direction: column;
     align-self: center;
-    
+    margin-bottom: 100px;
 }
 
 section #content p
@@ -102,5 +102,48 @@ section #content button:hover
     height: 30px;
     width: 210px;
 }
+
+section #nav-content
+{
+    margin-bottom: 50px;
+}
+
+section #nav-content div
+{
+    margin-bottom: 25px;
+}
+
+section #nav-content div 
+{
+    display: flex;
+    flex-direction: row;
+}
+
+section #nav-content div a img
+{
+    width: 70px;
+    margin-right: 15px;
+}
+
+section #nav-content div .text-content 
+{
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+
+section #nav-content div .text-content p#title
+{
+    font-size: 30px;
+    align-self: center;
+
+}
+
+section #nav-content div .text-content p#description
+{
+    font-size: 15px;
+}
+
+
 
 
