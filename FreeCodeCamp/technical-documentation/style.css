@@ -4,9 +4,15 @@
     padding: 0;
 }
 
+body
+{
+    display: flex;
+    flex-direction: row;
+}
+
 .menu-doc
 {
-    height: 100%;
-    width: 100%;
-    border: solid 4px black;
+    height: 100vh;
+    width: 25%;
+    border-right: solid 4px black;
 }
