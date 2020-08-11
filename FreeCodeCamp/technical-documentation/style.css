@@ -12,7 +12,36 @@ body
 
 .menu-doc
 {
-    height: 100vh;
-    width: 25%;
-    border-right: solid 4px black;
+    
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.4);
+}
+
+.menu-doc #navbar
+{
+    position: absolute;
+}
+
+.main 
+{
+    padding: 20px;
+}
+
+.main #main-doc
+{
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+}
+
+.main #main-doc section h1
+{
+    margin-bottom: 50px;
 }
