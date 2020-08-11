@@ -23,9 +23,9 @@ body
     border-color: black;
 }
 
-.menu-doc #navbar
-{
-    position: absolute;
+.menu-doc #navbar header h1
+{   
+    margin-left: 35px;
 }
 
 .main 
