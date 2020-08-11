@@ -1,0 +1,15 @@
+{
+  "name": "10-Testes_TDD_e_BDD",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^8.1.1"
+  }
+}
