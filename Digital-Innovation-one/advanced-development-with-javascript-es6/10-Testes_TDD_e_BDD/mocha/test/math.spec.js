@@ -2,6 +2,11 @@ const assert = require('assert');
 const Math = require('../src/math.js');
 
 describe('Math class', function() {
+    //Hooks
+    beforeEach(function() {
+        value = 0
+    });
+
     it('Sum two numbers', function(done) {
         const math = new Math();
 
