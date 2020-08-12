@@ -23,10 +23,49 @@ body
     border-color: black;
 }
 
+@media (max-width: 700px)
+{
+    .menu-doc
+    {
+        min-width: 190px;
+        width: 200px;
+    }
+
+ 
+    .main #main-doc
+    {
+            position: absolute;
+            margin-left: 10px;
+            padding: 5px;
+            margin-bottom: 110px;
+    }
+
+}
+
+
 .menu-doc #navbar header h1
 {   
-    margin-left: 35px;
+    padding-left: 35px;
+    background-color: rgba(0, 22, 22, 0.5);
+    border-bottom: solid 2px black;
 }
+
+.menu-doc #navbar li
+{
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    margin-top: 25px;
+    border-bottom: solid 2px black;
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+
+.menu-doc #navbar li a
+{
+    text-decoration: none;
+}
+
 
 .main 
 {
