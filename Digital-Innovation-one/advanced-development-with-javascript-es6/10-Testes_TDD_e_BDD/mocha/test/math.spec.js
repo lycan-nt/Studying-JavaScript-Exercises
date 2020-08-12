@@ -14,9 +14,9 @@ describe('Math class', function() {
         
     });
 
-    // it.only('Multiply two numbers', function() {
-    //     const math = new Math();
+    it('Multiply two numbers', function() {
+        const math = new Math();
 
-    //     assert.equal(math.multiply(5, 5), 25)
-    // });
+        assert.equal(math.multiply(5, 5), 25)
+    });
 });
