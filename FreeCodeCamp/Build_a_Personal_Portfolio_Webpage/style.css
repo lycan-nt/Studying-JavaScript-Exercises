@@ -84,13 +84,13 @@ section#projects .allprojects p
 
 }
 
-section.contact
+section#contact
 {
     height: 225px;
     background-color: black;
 }
 
-section.contact a 
+section#contact a 
 {
     margin-top: 25px;
     color: blueviolet
