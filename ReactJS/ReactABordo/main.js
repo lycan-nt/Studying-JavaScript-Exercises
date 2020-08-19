@@ -67,7 +67,13 @@ function MyComponent() {
     )
 }
 
+function MyComponentBrother() {
+    return (
+        <h1>Component Brother</h1>
+    )
+}
+
 ReactDOM.render(
-    <MyComponent />,
+    <MyComponentBrother />,
     document.getElementById("app")
 )
