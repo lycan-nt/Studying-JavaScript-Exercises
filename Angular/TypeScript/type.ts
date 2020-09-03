@@ -1,23 +1,15 @@
-class Default {
-    texto: string;
-    numero: number;
-    qualquer: any;
-    booleano: boolean;
-    array: any[];
+enum CardSuits {Clubs, Hearts, Spades, Diamonds}
 
-    constructor() {
-        this.metodo();
-
-        this.array = [
-            {
-                teste: "teste"
-            }
-        ]
+function teste() {
+    let x = 1;
+    if (x === CardSuits.Clubs)
+    {
+        alert('True');
     }
-
-    metodo() {
-        this.numero = 10;
-        this.texto = `Este e um alert simples em typescript`;
-        return alert(this.texto);
+    else{
+        alert('False')
     }
+    console.log(CardSuits.Clubs);
 }
+
+teste();
