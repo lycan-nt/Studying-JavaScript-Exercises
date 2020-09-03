@@ -1,7 +1,3 @@
-"use strict";
-exports.__esModule = true;
-var user = {
-    name: 'Felipe',
-    age: 25,
-    active: true
-};
+function teste(name, age) {
+}
+teste('FElipe', 24);

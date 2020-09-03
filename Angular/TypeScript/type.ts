@@ -1,11 +1,4 @@
-export interface User {
-    name: string;
-    age: number;
-    active?: boolean;
+function teste(name: string, age: number) {
 }
 
-let user: User = {
-    name: 'Felipe',
-    age: 25,
-    active: true
-}
+teste('FElipe', 24);
