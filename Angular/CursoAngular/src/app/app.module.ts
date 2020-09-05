@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { SegundoComponenteComponent } from './segundo-componente/segundo-componente.component';
+import { NgifNgforComponent } from './ngif-ngfor/ngif-ngfor.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DataBindingComponent,
-    SegundoComponenteComponent
+    SegundoComponenteComponent,
+    NgifNgforComponent
   ],
   imports: [
     BrowserModule,
