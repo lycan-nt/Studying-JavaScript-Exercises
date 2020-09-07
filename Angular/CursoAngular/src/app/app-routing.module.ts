@@ -5,6 +5,17 @@ import { SegundoComponenteComponent } from './segundo-componente/segundo-compone
 import { NgifNgforComponent } from './ngif-ngfor/ngif-ngfor.component';
 
 const routes: Routes = [
+
+  {
+    path: '',
+    component: NgifNgforComponent
+  },
+
+  {
+    path: 'lazy', loadChildren: () => import('./modules/lazyloading/lazyloading.module')
+      .then((m) => m.LazyloadingModule )
+  },
+
   {
     path: 'Primeiro-Componente',
     component: DataBindingComponent
