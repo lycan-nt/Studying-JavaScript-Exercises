@@ -1,0 +1,15 @@
+<h1 [ngClass] = "isGreen ? 'text-green': 'text-red'">{{ text | uppercase }}</h1> <br/>
+
+<ul *ngIf="numeros.length > 0">
+  <li *ngFor="let numero of numeros">
+    {{ numeros }}
+  </li>
+</ul>
+
+<p *ngIf="numeros.length == 0">Nenhum dado encontrado</p>
+
+<router-outlet></router-outlet>
+
+{{ cash | currency }} <br/>
+
+{{ date | date}}
