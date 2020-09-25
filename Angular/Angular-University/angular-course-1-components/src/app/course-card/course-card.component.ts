@@ -34,4 +34,17 @@ export class CourseCardComponent implements OnInit {
     return this.course && this.course.iconUrl
   }
 
+  cardClass() {
+    if (this.course.category == 'BEGINNER') 
+    {
+      return 'beginner';
+    }
+
+  }
+
+  cardStyle() {
+    return {'text-decoration':'underline'}
+    
+  }
+
 }
