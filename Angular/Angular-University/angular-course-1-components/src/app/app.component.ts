@@ -12,7 +12,7 @@ export class AppComponent {
 
   course = COURSES;
 
-  
+  startDate = new Date();  
 
   onCourseSelected(course: Course) {
     console.log("Card clicked", course);
