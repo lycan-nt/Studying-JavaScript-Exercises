@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "routing": {
+    "routigin": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/routing",
+            "outputPath": "dist/routigin",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "routing:build"
+            "browserTarget": "routigin:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "routing:build:production"
+              "browserTarget": "routigin:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "routing:build"
+            "browserTarget": "routigin:build"
           }
         },
         "test": {
@@ -110,19 +110,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "routing:serve"
+            "devServerTarget": "routigin:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "routing:serve:production"
+              "devServerTarget": "routigin:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "routing",
+  "defaultProject": "routigin",
   "cli": {
-    "analytics": false
+    "analytics": "db10c1c0-ef5b-4f7a-b1ca-8efbd0bef183"
   }
 }

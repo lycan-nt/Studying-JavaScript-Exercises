@@ -5,12 +5,11 @@ import { Rota2Component } from './components/rota2/rota2.component';
 
 const routes: Routes = [
   {
-    path: 'rota1',
+    path: "rota1",
     component: Rota1Component
-  },
-
+  }, 
   {
-    path: 'rota2',
+    path: "rota2",
     component: Rota2Component
   }
 ];
