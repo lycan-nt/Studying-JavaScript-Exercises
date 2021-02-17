@@ -9,4 +9,9 @@ export class AppComponent {
   data = {
     title: 'Angular Core Deep Dive'
   }
+
+  onLogoClicked()
+  {
+    alert("Clicked");
+  }
 }
