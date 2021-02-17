@@ -14,4 +14,8 @@ export class AppComponent {
   {
     alert("Clicked");
   }
+
+  onKeyUp(newTitle: string) {
+    this.data.title = newTitle; 
+  }
 }

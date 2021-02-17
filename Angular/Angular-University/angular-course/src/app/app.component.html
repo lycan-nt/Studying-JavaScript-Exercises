@@ -339,6 +339,6 @@
   </div>
 
 
-  <input class="demo" value = "Test" #titleInput>
+  <input class="demo" (keyup)="onKeyUp(titleInput.value)" value = "Test" #titleInput>
 
  
