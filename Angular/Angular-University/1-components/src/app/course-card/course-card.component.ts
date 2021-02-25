@@ -22,6 +22,10 @@ export class CourseCardComponent implements OnInit {
   ngOnInit() {
   }
 
+  isImageVisible() {
+    return this.course && this.course.iconUrl
+  }
+
   onViewCourse() {
     console.log("Button card-component clicked...");
 
