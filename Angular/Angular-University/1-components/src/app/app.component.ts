@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {COURSES} from '../db-data';
+import { COURSES } from '../db-data';
 import { Course } from './model/course';
 
 @Component({
@@ -9,14 +9,10 @@ import { Course } from './model/course';
 })
 export class AppComponent {
 
-coreCourse = COURSES[0];
+  courses = COURSES;
 
-rxjsCourse = COURSES[1];
-
-ngrxCourse = COURSES[2];
-
-onCourseSelected(course: Course) {
-  console.log("Card Clicked burbuled...", course);
-}
+  onCourseSelected(course: Course) {
+    console.log("Card Clicked burbuled...", course);
+  }
 
 }
