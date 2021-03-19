@@ -4,6 +4,10 @@
 
 </div>
 
+<div class="demo">
+    <div>{{ price | currency}}</div>
+</div>
+
 <div class="courses">
     <course-card *ngFor="let course of courses; index as i;"
         (courseSelected)="onCourseSelected($event)" 
