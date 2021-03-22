@@ -4,12 +4,12 @@
 
 </div>
 
-<div class="demo">
-    <div>{{ price | currency}}</div>
+<div *ngFor="let pair of course | keyvalue">
+    {{ pair.key }}
 </div>
 
 <div class="courses">
-    <course-card *ngFor="let course of courses; index as i;"
+    <course-card *ngFor="let course of courses | slice:0:2; index as i;"
         (courseSelected)="onCourseSelected($event)" 
         [course]="course" [cardIndex]="i + 1">
        

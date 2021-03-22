@@ -17,6 +17,10 @@ export class AppComponent {
 
   price = 9.99;
 
+  rate = 0.65;
+
+  course = COURSES[0];
+
   onCourseSelected(course: Course) {
     console.log("Card Clicked burbuled...", course);
   }
