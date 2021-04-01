@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import { timer, of, Observable } from 'rxjs';
 
 // const source = timer(1000, 2000);
@@ -20,9 +20,7 @@ const myObserver = {
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor()
-  {
-    myObservable.subscribe(myObserver);
-  }
+
+
   title = 'angular-observable-rxjs';
 }
